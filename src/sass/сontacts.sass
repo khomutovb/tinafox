@@ -1,0 +1,60 @@
+.сontacts
+	height: auto
+.сontacts_content
+	display: flex
+.contacts__header
+	padding: 30px 0
+.contacts_map
+	width: 55%
+.contact_title
+	width: 40%
+	font-family:  Montserrat, Arial
+	font-style: normal
+	font-weight: 600
+	font-size: 18px
+	line-height: 30px
+.contact_content
+	width: 60%
+.contacts_item
+	display: flex
+	margin-bottom: 30px
+.contacts_left
+	width: 45%
+.contact_content
+	p 
+		font-family:  Montserrat, Arial
+		font-style: normal
+		font-weight: normal
+		font-size: 15px
+		line-height: 18px
+		color: #494E53
+		margin-bottom: 10px
+		padding-left: 30px
+.contacts_item2, .contacts_item3, .contacts_item4
+	padding-top: 50px
+	border-top: 1px solid #BEC8D0
+#map
+	border: 0
+	width: 100%
+	height: 55vw
+.contacts_map
+	padding: 0 20px
+	min-width: 320px
+@media (max-width: 768px)
+	.contacts_map
+		width: 90%
+		padding: 0 15px 0 0
+	.contacts_left
+		width: 90%
+	.сontacts_content
+		flex-wrap: wrap
+@media (max-width: 420px)
+	.contacts_item
+		flex-direction: column
+	.contact_content, .contact_title
+		width: 100%
+	.contact_content
+		p 
+			padding-left: 0
+	.contact_title
+		margin-bottom: 20px

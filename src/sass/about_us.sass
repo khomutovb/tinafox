@@ -5,11 +5,11 @@
 	position: relative
 	display: flex
 	width: 100%
-	height: 56vw
+	height: auto
 .about_us__left1_leaves
 	position: absolute
 	top: 110px
-	left: 190px
+	left: 240px
 	z-index: -5
 	& img
 		width: 70%
@@ -20,43 +20,47 @@
 .about_us__left1
 	position: relative
 	width: 100%
-	height: 28vw
+	height: auto
 	z-index: -10
 .about_us__left2
 	position: relative
 	width: 100%
-	height: 28vw
-	padding: 90px 50px 0 50px
-	z-index: 100
-	& p
+	height: auto
+	margin-top: 65px
+	padding: 45px 50px 30px 50px
+	background-color: #fff
+	z-index: 2
+	p
 		text-align: center
 		line-height: 2
+	.about_us__ppp
+		margin: 25px 0
 .about_us__right2
 	display: flex
 	margin-top: 23px
 .about_us__left1
 	& img
-		width: 93%
-		margin: 43px 10px 10px 5px
+		width: 100%
+		margin: 43px 0px 0px 0px
 .about_us__subtitle
-	font-family:  Playfair Display, New Times Roman, Arial
+	font-family:  Playfair Display, Palatino  Linotype, New Times Roman, Arial
 	font-style: normal
 	font-weight: bold
-	font-size: 22px
+	font-size: 26px
 	line-height: 30px
 .about_us__ppp
-	font-size: 10px
+	font-size: 15px
 	margin: 46px 0
 .about_us__right1
-	padding: 50px 50px 15px 50px
+	padding: 50px 50px 15px 90px
 	margin-top: 58px
 .about_us__ppp_r1
 	margin-top: 20px
 	line-height: 2
 .about_us__right21
 	width: 144%
-	margin-left: 20px
-	z-index: 100
+	margin-left: 50px
+	z-index: 3
 	& img
 		width: 100%
 .about_us__right22
@@ -65,7 +69,7 @@
 	& .about_us__ppp
 		margin: 0
 .about_us__right3
-	margin: 54px 50px 0 50px
+	margin: 54px 50px 0 90px
 .about_us__right3
 	& .about_us__ppp
 		margin-top: 20px
@@ -74,3 +78,76 @@
 	color: #B51850
 	&:hover
 		color: #FF0800
+@media (max-width: 1920px)
+	.about_us__left1_leaves
+		top: 110px
+		left: 410px
+		img
+			width: 80%
+@media (max-width: 1366px)
+	.about_us__left1_leaves
+		top: 110px
+		left: 240px
+	.about_us__ppp
+		font-size: 13px
+	.about_us__subtitle
+		font-size: 22px
+@media (max-width: 1200px)
+	.about_us__left1_leaves
+		left: 124px
+		img
+			width: 74%
+@media (max-width: 768px)
+	.about_us__ppp
+		font-size: 12px
+	.about_us__subtitle
+		font-size: 20px
+	.about_us__right2
+		flex-wrap: wrap
+	.about_us__right21
+		width: 50%
+	.about_us__left1_leaves
+		left: 110px
+		img
+			width: 45%
+@media (max-width: 660px)
+	.about_us__left2
+	 	padding: 20px 10px 0px 10px
+	 	margin-top: 20px
+	.about_us__right1
+	 	padding: 10px 10px 0px 10px
+	 	margin-top: 10px
+	.about_us__right22
+		padding: 30px 10px 0 10px
+	.about_us__right3
+		margin: 10px
+		padding: 0
+	.about_us__right21
+		margin-left: 25%
+	.about_us__content
+		flex-wrap: wrap
+	.about_us__left
+		width: 100%
+	.about_us__right
+		width: 100%
+	.about_us__ppp
+		font-size: 14px
+	.about_us__subtitle
+		font-size: 24px
+	.about_us__left1_leaves
+		img
+			width: 100%
+@media (max-width: 480px)
+	.about_us__left2
+	 	padding: 20px 10px 0px 10px
+	 	margin-top: 20px
+	.about_us__right1
+	 	padding: 10px 10px 0px 10px
+	 	margin-top: 10px
+	.about_us__right22
+		padding: 30px 10px 0 10px
+	.about_us__right3
+		margin: 10px
+		padding: 10px
+	.about_us__right21
+		margin-left: 25%
