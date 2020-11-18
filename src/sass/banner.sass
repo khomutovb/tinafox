@@ -1,0 +1,142 @@
+.home__slider
+    padding: 0 60px
+    @media (max-width: 1366px)
+        padding: 0 30px
+    @media (max-width: 768px)
+        padding: 0 16px
+.background-slider
+    position: absolute
+    top: 0
+    z-index: -2
+    left: 0
+    right: 0
+    margin: auto
+    text-align: center
+    @media (max-width: 768px)
+        top: 50px
+    @media (max-width: 660px)
+        top: 0px
+    & img
+        max-width: 100%
+        @media (max-width: 768px)
+            height: 560px
+            object-fit: cover
+.testimonial-area
+    .slick-slide
+        & img
+            @media (max-width: 768px)
+                height: 215px
+        &.slick-slide.slick-center
+            transform: scale(1) rotate(0)
+        & img
+            margin: auto
+            cursor: pointer
+            transform: scale(0.55)
+            opacity: 0.5
+            transition: transform 700ms linear, opacity 700ms linear
+            filter: grayscale(100%)
+        &.slick-slide.slick-center
+            & img
+                opacity: 1
+                transform: scale(1) rotate(0)
+                filter: grayscale(0%)
+.testimonial-text-slider
+    position: relative
+    top: -60px
+    @media (max-width: 768px)
+        top: 0
+.sin-testiText
+    outline: none
+    position: relative
+    top: -300px
+.sin-testiImage
+    outline: none
+.testiText-info
+    display: flex
+    justify-content: space-between
+    align-items: center
+    & a
+        outline: none !important
+        font-size: 14px
+        border-bottom: 1px solid
+.testiText-price__old
+    font-size: 18px
+    text-decoration-line: line-through
+    color: #717D86
+    @media (max-width: 992px)
+        font-size: 14px
+.testiText-price__new
+    font-size: 36px
+    font-weight: bold
+    color: #E91145
+    @media (max-width: 992px)
+        font-size: 31px
+.testiText-title
+    margin-top: 100px
+    max-width: 334px
+    font-size: 25px
+    line-height: 36px
+    @media (max-width: 992px)
+        font-size: 16px
+        margin-top: 10px
+        line-height: 20px
+        max-width: 270px
+.testiText-more
+    margin-top: 100px
+    font-size: 25px
+    line-height: 36px
+    width: 30%
+    @media (max-width: 992px)
+        font-size: 14px
+        margin-top: 10px
+        line-height: 20px
+        width: initial
+        align-self: flex-start
+.testimonial-image-slider
+    margin: 70px 0
+    & .slick-slide
+        transition: transform 700ms linear
+        transition-property: transform
+        will-change: transform
+        &.slick-active
+            @media (min-width: 1200px)
+                transform: rotate(-15deg) scale(0.5)
+            & + .slick-active
+                @media (min-width: 1200px)
+                    transform: rotate(15deg)
+        &.slick-center
+            @media (min-width: 1200px)
+                transform: rotate(0deg) !important
+            & + .slick-slide
+                @media (min-width: 1200px)
+                    transform: rotate(-15deg)
+                & + .slick-slide
+                    @media (min-width: 1200px)
+                        transform: rotate(15deg) scale(0.5)
+.home__slider-about
+    margin: auto
+    max-width: 963px
+    text-align: center
+    font-size: 32px
+    font-family: serif
+    line-height: 51px
+    margin-top: 210px
+    @media screen and (max-width: 1200px)
+        margin-top: 50px
+    @media (max-width: 768px)
+        font-size: 21px
+        line-height: 31px
+.home__slider-circles
+    position: absolute
+    top: -80px
+    left: 0
+    right: 0
+    margin: auto
+    z-index: -1
+    width: 314px
+    @media (max-width: 768px)
+        width: 142px
+.slick-slide:focus
+    outline: none !important
+    & img
+        outline: none !important

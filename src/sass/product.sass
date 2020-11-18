@@ -1,0 +1,169 @@
+.product__list
+    display: flex
+    justify-content: center
+.product__item
+    padding: 10px
+    width: 330px
+    min-height: 516px
+    background: #FFFFFF
+    position: relative
+    @media (max-width: 1366px)
+        min-height: 390px
+    @media (max-width: 550px)
+        min-height: 315px
+    & .product__label
+        position: absolute
+        width: 30px
+        height: 30px
+        top: 36px
+        left: 42px
+        font-weight: bold
+        font-size: 12px
+        @media (max-width: 1366px)
+            top: 20px
+            left: 15px
+        @media (max-width: 550px)
+            top: 13px
+        & .label__new::before
+            content: "NEW"
+            position: absolute
+            color: #71C503
+        & .label__sale::before
+            content: "SALE"
+            position: absolute
+            color: #E91145
+        & .label__top::before
+            content: "TOP"
+            position: absolute
+            color: #0803FF
+    & .product__like-btn
+        position: absolute
+        right: 41px
+        top: 34px
+        cursor: pointer
+        @media screen and (max-width: 1600px)
+            right: 15px
+            top: 20px
+        @media screen and (max-width: 550px)
+            display: none
+    & .product__comparison-btn
+        position: absolute
+        right: 41px
+        top: 87px
+        cursor: pointer
+        @media screen and (max-width: 1600px)
+            right: 15px
+            top: 65px
+        @media screen and (max-width: 550px)
+            display: none
+.photo-product-wrapper
+    text-align: center
+    max-height: 125px
+    max-width: 145px
+    text-align: center
+    margin: auto
+    margin-top: 91px
+    @media screen and (max-width: 1366px)
+        margin-top: 44px
+    @media screen and (max-width: 550px)
+        margin-top: 30px
+    & img
+        margin: auto
+        @media screen and (max-width: 1366px)
+            height: 100px
+.sale__info
+    position: absolute
+    margin-top: -25px
+    & p
+        color: #E91145
+        font-size: 12px
+        font-weight: 600
+.info-product-wrapper
+    font-size: 14px
+    margin: 0 auto
+    max-width: 250px
+    margin-top: 88px
+    @media screen and (max-width: 1366px)
+        margin-top: 50px
+    @media screen and (max-width: 1366px)
+        max-width: initial
+    @media screen and (max-width: 550px)
+        font-size: 12px
+        margin-top: 25px
+.product__title
+    display: block
+    min-height: 30px
+    @media (max-width:768px)
+        overflow: hidden
+        display: -webkit-box
+        -webkit-line-clamp: 2
+        -webkit-box-orient: vertical
+.category__title
+    display: block
+    margin-top: 20px
+    color: #717D86
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+    @media screen and (max-width: 550px)
+        display: none
+.product__reviews
+    margin-top: 20px
+    & a
+        @media screen and (max-width: 550px)
+            display: block
+.product__review-count
+    font-size: 12px
+    text-decoration-line: underline
+    margin-left: 10px
+    color: #717D86
+    @media screen and (max-width: 550px)
+        margin: 0
+        margin-top: 10px
+.product__price_container
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-top: 13px
+    & .product__price
+        display: flex
+        align-items: center
+        font-family: "Montserrat-Bold"
+        font-weight: 900
+        font-size: 22px
+        @media screen and (max-width: 550px)
+            font-size: 14px
+        @media screen and (max-width: 400px)
+            flex-direction: column
+            align-items: flex-start
+.product__buy
+    cursor: pointer
+    & svg
+        @media screen and (max-width: 550px)
+            width: 20px
+/** sale **/
+.product--sale .product__price
+    color: #E91145
+.product__old-price
+    font-family: "Montserrat-Regular"
+    font-weight: 400
+    color: #717D86
+    font-size: 12px
+    text-decoration-line: line-through
+    margin-left: 10px
+    align-self: center
+    @media (max-width: 400px)
+        margin: 0
+        align-self: flex-start
+.product__new-price
+    @media (max-width: 400px)
+        order: 2
+.slider__arrow
+    display: flex
+    & .previous_arrow
+        margin-right: 10px
+.slides-num
+    margin-right: 10px
+    & .num__all
+        color: #A6B6C1
+        margin-left: 5px

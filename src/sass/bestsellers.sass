@@ -1,0 +1,101 @@
+section
+    padding-top: 80px
+    padding-bottom: 40px
+.section__title
+    padding-bottom: 50px
+.product__list
+    display: flex
+    justify-content: center
+.product__item
+    padding: 10px
+    width: 330px
+    min-height: 516px
+    background: #FFFFFF
+    position: relative
+    margin: 0 9px
+    @media (max-width: 1366px)
+        margin: 0 6px
+    & .product__label
+        position: absolute
+        width: 30px
+        height: 30px
+        top: 36px
+        left: 42px
+        font-weight: bold
+        font-size: 12px
+        @media (max-width: 1366px)
+            left: 15px
+        & .label__new::before
+            content: "NEW"
+            position: absolute
+            color: #71C503
+        & .label__sale::before
+            content: "SALE"
+            position: absolute
+            color: #E91145
+        & .label__top::before
+            content: "TOP"
+            position: absolute
+            color: #0803FF
+    & .product__like-btn
+        position: absolute
+        right: 41px
+        top: 34px
+        cursor: pointer
+        @media screen and (max-width: 1600px)
+            right: 15px
+    & .product__comparison-btn
+        position: absolute
+        right: 41px
+        top: 87px
+        cursor: pointer
+        @media screen and (max-width: 1600px)
+            right: 15px
+.photo-product-wrapper
+    margin-top: 91px
+    text-align: center
+    max-height: 125px
+    & img
+        margin: auto
+.info-product-wrapper
+    font-size: 14px
+    margin: 0 auto
+    max-width: 250px
+    margin-top: 88px
+.product__title
+    display: block
+    min-height: 35px
+.category__title
+    display: block
+    margin-top: 20px
+    color: #717D86
+    white-space: nowrap
+    overflow: hidden
+    padding: 5px
+    text-overflow: ellipsis
+.product__reviews
+    margin-top: 20px
+.product__review-count
+    font-size: 12px
+    text-decoration-line: underline
+    margin-left: 10px
+    color: #717D86
+.product__price_container
+    display: flex
+    justify-content: space-between
+    margin-top: 13px
+    & .product__price
+        font-family: "Montserrat-Bold"
+        font-weight: 900
+        font-size: 22px
+.product__buy
+    cursor: pointer
+/** sale **/
+.product--sale .product__price
+    color: #E91145
+.product__old-price
+    font-family: "Montserrat-Regular"
+    font-weight: 400
+    color: #717D86
+    font-size: 12px
+    text-decoration-line: line-through

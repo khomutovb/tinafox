@@ -1,0 +1,355 @@
+.product-card
+    padding: 40px 60px 0px
+    @media (max-width: 1366px)
+        padding: 40px 30px 0px
+    @media (max-width: 768px)
+        padding: 20px 16px 0px
+.product__head
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    padding-bottom: 40px
+    @media (max-width: 992px)
+        flex-direction: column
+        align-items: flex-start
+    @media (max-width: 660px)
+        padding-bottom: 10px
+.product__title
+    @media (max-width: 992px)
+        order: 2
+        padding-top: 10px
+    & h2
+        font-size: calc(14px + 8 * ((100vw - 320px) / 1600))
+.product__body__container
+    display: flex
+    @media (max-width: 992px)
+        flex-direction: column
+.product-slider__container
+    position: relative
+    max-width: 43%
+    @media (max-width: 992px)
+        max-width: 100%
+.product-slider
+    width: 100%
+    background: #fff
+    margin-bottom: 50px
+    min-height: 708px
+    @media (max-width: 660px)
+        min-height: 445px
+    & .slick-list
+        height: 100%
+        height: 708px
+        @media (max-width: 660px)
+            height: 445px
+    & .slick-track
+        display: flex
+        align-items: center
+        height: 100%
+    & .slick-slide
+        height: initial
+        @media (max-width: 660px)
+            & img
+                height: 153px
+    & .slick-next
+        right: 60px
+        &::before
+            content: url(../img/arrow-product-right.svg)
+        @media (max-width: 660px)
+            right: 22px
+    & .slick-prev
+        left: 60px
+        z-index: 1
+        &::before
+            content: url(../img/arrow-product-left.svg)
+        @media (max-width: 660px)
+            left: 22px
+.product-slider__content
+    position: relative
+.product__videoreview
+    position: absolute
+    right: 60px
+    bottom: 80px
+    @media (max-width: 1600px)
+        right: 40px
+        bottom: 60px
+    @media (max-width: 660px)
+        width: 100%
+        right: 0
+        text-align: center
+        bottom: 25px
+    & svg
+        margin-top: -3px
+        margin-right: 8px
+.product-card .slick-dots
+    left: 60px
+    text-align: left
+    bottom: 60px
+    width: calc(50% - 60px)
+    @media (max-width: 1600px)
+        left: 40px
+        bottom: 40px
+    @media (max-width: 660px)
+        width: 100%
+        left: 0
+        bottom: 70px
+        text-align: center
+    & li
+        width: 50px
+        height: 50px
+        opacity: 0.3
+        transition: opacity .4s
+        @media (max-width: 660px)
+            width: 40px
+            height: 40px
+        &.slick-active
+            opacity: 1
+        & img
+            height: 100%
+.fancybox-thumbs__list a
+    background-size: contain
+.fancybox-thumbs__list a:before
+    border: 2px solid #ff5268
+.product-item__label
+    position: absolute
+    top: 60px
+    left: 60px
+    @media (max-width: 1600px)
+        top: 40px
+        left: 40px
+    @media (max-width: 660px)
+        left: 20px
+    &.label__top
+        text-transform: uppercase
+        font-size: 14px
+        font-family: "Montserrat-Bold"
+        &::before
+            content: "Top"
+            color: #0803FF
+    &.label__new
+        text-transform: uppercase
+        font-size: 14px
+        font-family: "Montserrat-Bold"
+        &::before
+            content: "New"
+            color: #71c503
+    &.label__sale
+        text-transform: uppercase
+        font-size: 14px
+        font-family: "Montserrat-Bold"
+        &::before
+            content: "Sale"
+            color: #e91145
+.product-info
+    margin-left: 60px
+    @media (max-width: 1366px)
+        margin-left: 30px
+    @media (max-width: 992px)
+        margin-left: 0px
+.product-info__title
+    font-size: calc(20px + 6 * ((100vw - 320px)/ 1600))
+    @media (max-width: 660px)
+        font-size: 14px
+        line-height: 25px
+.product-info__head
+    width: 100%
+    height: 77px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-top: 30px
+    border: 1px solid #D7E1E9
+    font-size: 12px
+    padding: 0 30px
+    @media (max-width: 660px)
+        flex-wrap: wrap
+        padding: 0 16px
+.product__info_head_available
+    color: #259330
+    font-weight: 600
+    @media (max-width: 660px)
+        width: 50%
+.product__info_head_brand
+    @media (max-width: 660px)
+        width: 100%
+.product__info_head_id
+    color: #8A9CAA
+.product__info_head_review
+    & svg
+        margin-right: 10px
+        position: relative
+        top: -3px
+.product-info__price
+    display: flex
+    align-items: center
+    margin-top: 30px
+.product__price_current
+    font-size: calc(20px + 12 * ((100vw - 320px)/ 1600))
+    color: #E91145
+    font-family: "Montserrat-Bold"
+    @media (max-width: 660px)
+        font-size: 32px
+.product_price_sale
+    font-size: 16px
+    line-height: 20px
+    text-decoration-line: line-through
+    color: #5A6B78
+    margin-left: 11px
+    margin-top: 5px
+.product__buttons__row
+    display: flex
+    @media (max-width: 1200px)
+        justify-content: space-between
+        width: 100%
+    @media (max-width: 660px)
+        flex-wrap: wrap
+.product__buttons
+    margin-top: 25px
+    display: flex
+    align-items: center
+    @media (max-width: 1200px)
+        flex-direction: column
+    @media (max-width: 992px)
+        flex-direction: row
+    @media (max-width: 660px)
+        flex-wrap: wrap
+    & button
+        height: 55px
+        line-height: 55px
+        border: 1px solid #CCDCE8
+        margin-right: 18px
+        text-align: center
+        font-size: 14px
+        @media (max-width: 660px)
+            margin: 0
+        &:hover
+            border: 1px solid #CCDCE8
+    & .product__buy__btn
+        min-width: 160px
+        background: #B51850
+        color: #fff
+        font-weight: bold
+        transition: background .4s
+        border: none !important
+        @media (max-width: 660px)
+            width: 100%
+            min-width: 100%
+        & svg
+            margin-right: 5px
+            margin-top: -3px
+        &:hover
+            background: #d61258
+    & .product__buy__click__btn
+        min-width: 189px
+        color: #4D5963
+        @media (max-width: 660px)
+            width: 100%
+            min-width: 100%
+        & svg
+            margin-top: -3px
+    & .product__like__btn
+        min-width: 55px
+        @media (max-width: 660px)
+            min-width: 50%
+        & svg
+            margin-top: -3px
+    & .product__comparison__btn
+        min-width: 55px
+        @media (max-width: 1200px)
+            margin: 0
+        @media (max-width: 992px)
+            margin-right: 18px
+        @media (max-width: 660px)
+            min-width: 50%
+            margin: 0
+        & svg
+            margin-top: -3px
+    & .product__present__btn
+        width: 100%
+        overflow: hidden
+        text-overflow: ellipsis
+        margin: 0
+        @media (max-width: 1200px)
+            margin-top: 20px
+        @media (max-width: 992px)
+            margin-top: 0px
+        & svg
+            margin-top: -3px
+            margin-right: 5px
+.product-info__characteristics
+    font-size: 14px
+    margin-top: 40px
+    border-bottom: 1px solid #D7E1E9
+    padding-bottom: 30px
+.product__characteristic
+    display: flex
+    align-items: center
+    margin: 10px 0
+    & p
+        &:first-child
+            min-width: 190px
+            color: #494E53
+            @media (max-width: 660px)
+                min-width: 140px
+.product-info__characteristics__title
+    font-weight: 600
+    margin-bottom: 35px
+    color: #000 !important
+.product-info__description__title
+    font-weight: 600
+    margin-bottom: 35px
+    color: #000 !important
+.product-info__description
+    font-size: 14px
+    margin-top: 40px
+    border-bottom: 1px solid #D7E1E9
+    padding-bottom: 30px
+    & p
+        line-height: 27px
+        color: #494E53
+.product-info__composition__title
+    font-size: 18px
+    font-weight: 600
+    margin-top: 30px
+.product-info__compositions
+    display: flex
+    flex-wrap: wrap
+    margin: -7px
+    margin-top: 20px
+    overflow: hidden
+    height: 210px
+    @media (max-width: 660px)
+        margin: 0
+        height: 250px
+.product__composition__open
+    margin-top: 30px
+    font-size: 14px
+.product__composition
+    max-width: calc(50% - 15px)
+    width: 100%
+    border: 1px solid #D7E1E9
+    margin: 7px
+    height: 88px
+    display: flex
+    align-items: center
+    padding: 0 20px
+    @media (max-width: 660px)
+        max-width: 100%
+        margin: 7px 0
+.product-list
+    position: absolute
+    left: -60px
+    bottom: -230px
+    z-index: -1
+    @media (max-width: 992px)
+        display: none
+.product__composition__img
+    width: 60px
+.product__composition__text
+    padding-left: 25px
+    & p
+        line-height: 22px
+        overflow: hidden
+        display: -webkit-box
+        -webkit-line-clamp: 2
+        -webkit-box-orient: vertical
+        font-size: 14px

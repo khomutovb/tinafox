@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>TinaFox</title>
+</head>
+
+<body class="category">
+    //include('_header.html')
+    <main class="main">
+        <div class="catalog">
+            <div class="catalog__head">
+                <div class="catalog__title">
+                    <h2>Кисти и аксессуары для косметики</h2>
+                </div>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item active"><a href="#">Главная</a></li>
+                        <li class="breadcrumb-item active"><a href="#">Меню</a></li>
+                        <li class="breadcrumb-item active"><a href="#">О нас</a></li>
+                        <li class="breadcrumb-item">База каучуковая+Топ без лип...</li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="catalog__nav">
+                <div class="catalog__nav_list">
+                    <a href="#">
+                        <div class="catalog__nav_item">
+                            <div class="catalog__nav_photo">
+                                <img src="img/catalog.jpg" alt="">
+                            </div>
+                            <div class="catalog__nav_title">
+                                <p>Фрезера для маникюра и педикюра</p>
+                                <p class="catalog__nav_count">(74)</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="catalog__nav_item">
+                            <div class="catalog__nav_photo">
+                                <img src="img/catalog2.jpg" alt="">
+                            </div>
+                            <div class="catalog__nav_title">
+                                <p>Насадки алмазные</p>
+                                <p class="catalog__nav_count">(81)</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="catalog__nav_item">
+                            <div class="catalog__nav_photo">
+                                <img src="img/catalog3.jpg" alt="">
+                            </div>
+                            <div class="catalog__nav_title">
+                                <p>Корундовые и силиконовые насадки</p>
+                                <p class="catalog__nav_count">(50)</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="catalog__nav_item">
+                            <div class="catalog__nav_photo">
+                                <img src="img/catalog4.jpg" alt="">
+                            </div>
+                            <div class="catalog__nav_title">
+                                <p>Керамические и твердосплавные насадки</p>
+                                <p class="catalog__nav_count">(52)</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="catalog__nav_item">
+                            <div class="catalog__nav_photo">
+                                <img src="img/catalog5.jpg" alt="">
+                            </div>
+                            <div class="catalog__nav_title">
+                                <p>Насадки для педикюра (колпачки песочные, диски)</p>
+                                <p class="catalog__nav_count">(41)</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="catalog__nav_item">
+                            <div class="catalog__nav_photo">
+                                <img src="img/catalog6.jpg" alt="">
+                            </div>
+                            <div class="catalog__nav_title">
+                                <p>Подставки для фрез маникюрных</p>
+                                <p class="catalog__nav_count">(4)</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="catalog__nav_item">
+                            <div class="catalog__nav_photo">
+                                <img src="img/catalog7.jpg" alt="">
+                            </div>
+                            <div class="catalog__nav_title">
+                                <p>Щетки для чистки насадок для фрезера</p>
+                                <p class="catalog__nav_count">(3)</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <a href="" class="catalog__banner">
+                <img src="img/banner.jpg" alt="Banner">
+            </a>
+            <div class="catalog__body">
+                <aside class="sidebar" id="sidebar">
+                    <div class="sidebar__inner">
+                        <div class="sidebar__body">
+                            <!-- Sidebar filter -->
+                            <div class="sidebar__filter">
+                                <!-- Filter head (mobile) -->
+                                <div class="sidebar__filter_head">
+                                    <p class="sidebar__filter_title">Вы выбрали</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <div class="product">
+                    <div class="settings">
+                        <div class="settings__inner">
+                            <div class="settings__sort">
+                                <div class="select_wrap">
+                                    <div class="settings__showing_select_arrow2"></div>
+                                    <select name="settings_sort" id="settings_sort" class="settings__sort_select"
+                                        onchange="location = this.value;">
+                                        <option value="">
+                                            По популярности</option>
+                                        <option value="">Новый товар</option>
+                                        <option value="" selected="selected">
+                                            По возрастанию цены</option>
+                                        <option value="">
+                                            По убыванию цены</option>
+                                        <option value="">
+                                            Акционные</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="settings__showing">
+                                <p class="settings__showing_title">
+                                    Показывать</p>
+                                <div class="select_wrap">
+                                    <div class="settings__showing_select_arrow1"></div>
+                                    <select name="settings_showing" id="settings_showing"
+                                        class="settings__showing_select" onchange="location = this.value;">
+                                        <option value="" selected="selected">16 шт.</option>
+                                        <option value="">
+                                            32 шт.</option>
+                                        <option value="">
+                                            64 шт.</option>
+                                        <option value="">
+                                            128 шт.</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__list">
+                        <div class="product__item">
+                            <div class="product__label">
+                                <div class="product__label_item label__new"></div>
+                            </div>
+                            <button class="product__like-btn">
+                                <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/icons/icons.svg#like"></use>
+                                </svg>
+                            </button>
+                            <button class="product__comparison-btn">
+                                <svg width="23" height="19" viewBox="0 0 23 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/icons/icons.svg#comparison"></use>
+                                </svg>
+                            </button>
+                            <div class="photo-product-wrapper">
+                                <a href="">
+                                    <img src="img/tovar.jpg" alt="Tovar">
+                                </a>
+                            </div>
+                            <div class="info-product-wrapper">
+                                <a href="" class="product__title">Гель Краска Kodi золото N26, 5г</a>
+                                <a href="" class="category__title" title="">Одноразовая продукция</a>
+                                <div class="product__reviews">
+                                    <svg width="59" height="9" viewBox="0 0 59 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="img/icons/icons.svg#stars"></use>
+                                    </svg>
+                                    <a href="" class="product__review-count">12 отзывов</a>
+                                </div>
+                                <div class="product__price_container">
+                                    <div class="product__price">
+                                        61 грн.
+                                    </div>
+                                    <button class="product__buy">
+                                        <svg width="26" height="22" viewBox="0 0 26 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <use xlink:href="img/icons/icons.svg#buy"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__item">
+                            <div class="product__label">
+                                <div class="product__label_item"></div>
+                            </div>
+                            <button class="product__like-btn">
+                                <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/icons/icons.svg#like"></use>
+                                </svg>
+                            </button>
+                            <button class="product__comparison-btn">
+                                <svg width="23" height="19" viewBox="0 0 23 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/icons/icons.svg#comparison"></use>
+                                </svg>
+                            </button>
+                            <div class="photo-product-wrapper">
+                                <a href="">
+                                    <img src="img/tovar2.jpg" alt="Tovar">
+                                </a>
+                            </div>
+                            <div class="info-product-wrapper">
+                                <a href="" class="product__title">Чемодан-кейс для мастера «Бьюти кейс», бежевый</a>
+                                <a href="" class="category__title" title="">Стерилизаторы и ультразвуков </a>
+                                <div class="product__reviews">
+                                    <svg width="59" height="9" viewBox="0 0 59 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="img/icons/icons.svg#stars"></use>
+                                    </svg>
+                                    <a href="" class="product__review-count">43 отзыва</a>
+                                </div>
+                                <div class="product__price_container">
+                                    <div class="product__price">
+                                        599 грн.
+                                    </div>
+                                    <button class="product__buy">
+                                        <svg width="26" height="22" viewBox="0 0 26 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <use xlink:href="img/icons/icons.svg#buy"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__item">
+                            <div class="product__label">
+                                <div class="product__label_item"></div>
+                            </div>
+                            <button class="product__like-btn">
+                                <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/icons/icons.svg#like"></use>
+                                </svg>
+                            </button>
+                            <button class="product__comparison-btn">
+                                <svg width="23" height="19" viewBox="0 0 23 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/icons/icons.svg#comparison"></use>
+                                </svg>
+                            </button>
+                            <div class="photo-product-wrapper">
+                                <a href="">
+                                    <img src="img/tovar3.jpg" alt="Tovar">
+                                </a>
+                            </div>
+                            <div class="info-product-wrapper">
+                                <a href="" class="product__title">Ультрабонд (безкислотный праймер) для ногтей
+                                    Lilly...</a>
+                                <a href="" class="category__title" title="">Кисти для геля, акрила, дизайна...</a>
+                                <div class="product__reviews">
+                                    <svg width="59" height="9" viewBox="0 0 59 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="img/icons/icons.svg#stars"></use>
+                                    </svg>
+                                    <a href="" class="product__review-count">5 отзывов</a>
+                                </div>
+                                <div class="product__price_container">
+                                    <div class="product__price">
+                                        100 грн.
+                                    </div>
+                                    <button class="product__buy">
+                                        <svg width="26" height="22" viewBox="0 0 26 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <use xlink:href="img/icons/icons.svg#buy"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__item">
+                            <div class="product__label">
+                                <div class="product__label_item label__top"></div>
+                            </div>
+                            <button class="product__like-btn">
+                                <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/icons/icons.svg#like"></use>
+                                </svg>
+                            </button>
+                            <button class="product__comparison-btn">
+                                <svg width="23" height="19" viewBox="0 0 23 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/icons/icons.svg#comparison"></use>
+                                </svg>
+                            </button>
+                            <div class="photo-product-wrapper">
+                                <a href="">
+                                    <img src="img/tovar4.jpg" alt="Tovar">
+                                </a>
+                            </div>
+                            <div class="info-product-wrapper">
+                                <a href="" class="product__title">База ОРІ 15 мл для гель лака</a>
+                                <a href="" class="category__title" title="">Аэрография для ногтей</a>
+                                <div class="product__reviews">
+                                    <svg width="59" height="9" viewBox="0 0 59 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="img/icons/icons.svg#stars"></use>
+                                    </svg>
+                                    <a href="" class="product__review-count">Оставить отзыв</a>
+                                </div>
+                                <div class="product__price_container">
+                                    <div class="product__price">
+                                        130 грн.
+                                    </div>
+                                    <button class="product__buy">
+                                        <svg width="26" height="22" viewBox="0 0 26 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <use xlink:href="img/icons/icons.svg#buy"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__item product--sale">
+                            <div class="product__label">
+                                <div class="product__label_item label__sale"></div>
+                            </div>
+                            <button class="product__like-btn">
+                                <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/icons/icons.svg#like"></use>
+                                </svg>
+                            </button>
+                            <button class="product__comparison-btn">
+                                <svg width="23" height="19" viewBox="0 0 23 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/icons/icons.svg#comparison"></use>
+                                </svg>
+                            </button>
+                            <div class="photo-product-wrapper">
+                                <a href="">
+                                    <img src="img/tovar5.jpg" alt="Tovar">
+                                </a>
+                            </div>
+                            <div class="info-product-wrapper">
+                                <div class="sale__info">
+                                    <p>
+                                        Заканчивается
+                                    </p>
+                                </div>
+                                <a href="" class="product__title">Праймер безкислотный Queen B Ultra-bond, 10мл</a>
+                                <a href="" class="category__title" title="">Уходовая косметика и аксессуа...</a>
+                                <div class="product__reviews">
+                                    <svg width="59" height="9" viewBox="0 0 59 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="img/icons/icons.svg#stars"></use>
+                                    </svg>
+                                    <a href="" class="product__review-count">90 отзывов</a>
+                                </div>
+                                <div class="product__price_container">
+                                    <div class="product__price">
+                                        <div class="product__new-price">100 грн. </div>
+                                        <div class="product__old-price">100 грн</div>
+                                    </div>
+                                    <button class="product__buy">
+                                        <svg width="26" height="22" viewBox="0 0 26 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <use xlink:href="img/icons/icons.svg#buy"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__item">
+                            <div class="product__label">
+                                <div class="product__label_item label__new"></div>
+                            </div>
+                            <button class="product__like-btn">
+                                <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/icons/icons.svg#like"></use>
+                                </svg>
+                            </button>
+                            <button class="product__comparison-btn">
+                                <svg width="23" height="19" viewBox="0 0 23 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/icons/icons.svg#comparison"></use>
+                                </svg>
+                            </button>
+                            <div class="photo-product-wrapper">
+                                <a href="">
+                                    <img src="img/tovar.jpg" alt="Tovar">
+                                </a>
+                            </div>
+                            <div class="info-product-wrapper">
+                                <a href="" class="product__title">Гель Краска Kodi золото N26, 5г</a>
+                                <a href="" class="category__title" title="">Одноразовая продукция</a>
+                                <div class="product__reviews">
+                                    <svg width="59" height="9" viewBox="0 0 59 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="img/icons/icons.svg#stars"></use>
+                                    </svg>
+                                    <a href="" class="product__review-count">12 отзывов</a>
+                                </div>
+                                <div class="product__price_container">
+                                    <div class="product__price">
+                                        61 грн.
+                                    </div>
+                                    <button class="product__buy">
+                                        <svg width="26" height="22" viewBox="0 0 26 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <use xlink:href="img/icons/icons.svg#buy"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__item">
+                            <div class="product__label">
+                                <div class="product__label_item label__new"></div>
+                            </div>
+                            <button class="product__like-btn">
+                                <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/icons/icons.svg#like"></use>
+                                </svg>
+                            </button>
+                            <button class="product__comparison-btn">
+                                <svg width="23" height="19" viewBox="0 0 23 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/icons/icons.svg#comparison"></use>
+                                </svg>
+                            </button>
+                            <div class="photo-product-wrapper">
+                                <a href="">
+                                    <img src="img/tovar.jpg" alt="Tovar">
+                                </a>
+                            </div>
+                            <div class="info-product-wrapper">
+                                <a href="" class="product__title">Гель Краска Kodi золото N26, 5г</a>
+                                <a href="" class="category__title" title="">Одноразовая продукция</a>
+                                <div class="product__reviews">
+                                    <svg width="59" height="9" viewBox="0 0 59 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="img/icons/icons.svg#stars"></use>
+                                    </svg>
+                                    <a href="" class="product__review-count">12 отзывов</a>
+                                </div>
+                                <div class="product__price_container">
+                                    <div class="product__price">
+                                        61 грн.
+                                    </div>
+                                    <button class="product__buy">
+                                        <svg width="26" height="22" viewBox="0 0 26 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <use xlink:href="img/icons/icons.svg#buy"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__item">
+                            <div class="product__label">
+                                <div class="product__label_item label__new"></div>
+                            </div>
+                            <button class="product__like-btn">
+                                <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/icons/icons.svg#like"></use>
+                                </svg>
+                            </button>
+                            <button class="product__comparison-btn">
+                                <svg width="23" height="19" viewBox="0 0 23 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/icons/icons.svg#comparison"></use>
+                                </svg>
+                            </button>
+                            <div class="photo-product-wrapper">
+                                <a href="">
+                                    <img src="img/tovar.jpg" alt="Tovar">
+                                </a>
+                            </div>
+                            <div class="info-product-wrapper">
+                                <a href="" class="product__title">Гель Краска Kodi золото N26, 5г</a>
+                                <a href="" class="category__title" title="">Одноразовая продукция</a>
+                                <div class="product__reviews">
+                                    <svg width="59" height="9" viewBox="0 0 59 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="img/icons/icons.svg#stars"></use>
+                                    </svg>
+                                    <a href="" class="product__review-count">12 отзывов</a>
+                                </div>
+                                <div class="product__price_container">
+                                    <div class="product__price">
+                                        61 грн.
+                                    </div>
+                                    <button class="product__buy">
+                                        <svg width="26" height="22" viewBox="0 0 26 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <use xlink:href="img/icons/icons.svg#buy"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__item">
+                            <div class="product__label">
+                                <div class="product__label_item label__new"></div>
+                            </div>
+                            <button class="product__like-btn">
+                                <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/icons/icons.svg#like"></use>
+                                </svg>
+                            </button>
+                            <button class="product__comparison-btn">
+                                <svg width="23" height="19" viewBox="0 0 23 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/icons/icons.svg#comparison"></use>
+                                </svg>
+                            </button>
+                            <div class="photo-product-wrapper">
+                                <a href="">
+                                    <img src="img/tovar.jpg" alt="Tovar">
+                                </a>
+                            </div>
+                            <div class="info-product-wrapper">
+                                <a href="" class="product__title">Гель Краска Kodi золото N26, 5г</a>
+                                <a href="" class="category__title" title="">Одноразовая продукция</a>
+                                <div class="product__reviews">
+                                    <svg width="59" height="9" viewBox="0 0 59 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="img/icons/icons.svg#stars"></use>
+                                    </svg>
+                                    <a href="" class="product__review-count">12 отзывов</a>
+                                </div>
+                                <div class="product__price_container">
+                                    <div class="product__price">
+                                        61 грн.
+                                    </div>
+                                    <button class="product__buy">
+                                        <svg width="26" height="22" viewBox="0 0 26 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <use xlink:href="img/icons/icons.svg#buy"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__item">
+                            <div class="product__label">
+                                <div class="product__label_item label__new"></div>
+                            </div>
+                            <button class="product__like-btn">
+                                <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/icons/icons.svg#like"></use>
+                                </svg>
+                            </button>
+                            <button class="product__comparison-btn">
+                                <svg width="23" height="19" viewBox="0 0 23 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/icons/icons.svg#comparison"></use>
+                                </svg>
+                            </button>
+                            <div class="photo-product-wrapper">
+                                <a href="">
+                                    <img src="img/tovar.jpg" alt="Tovar">
+                                </a>
+                            </div>
+                            <div class="info-product-wrapper">
+                                <a href="" class="product__title">Гель Краска Kodi золото N26, 5г</a>
+                                <a href="" class="category__title" title="">Одноразовая продукция</a>
+                                <div class="product__reviews">
+                                    <svg width="59" height="9" viewBox="0 0 59 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="img/icons/icons.svg#stars"></use>
+                                    </svg>
+                                    <a href="" class="product__review-count">12 отзывов</a>
+                                </div>
+                                <div class="product__price_container">
+                                    <div class="product__price">
+                                        61 грн.
+                                    </div>
+                                    <button class="product__buy">
+                                        <svg width="26" height="22" viewBox="0 0 26 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <use xlink:href="img/icons/icons.svg#buy"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__item">
+                            <div class="product__label">
+                                <div class="product__label_item label__new"></div>
+                            </div>
+                            <button class="product__like-btn">
+                                <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/icons/icons.svg#like"></use>
+                                </svg>
+                            </button>
+                            <button class="product__comparison-btn">
+                                <svg width="23" height="19" viewBox="0 0 23 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/icons/icons.svg#comparison"></use>
+                                </svg>
+                            </button>
+                            <div class="photo-product-wrapper">
+                                <a href="">
+                                    <img src="img/tovar.jpg" alt="Tovar">
+                                </a>
+                            </div>
+                            <div class="info-product-wrapper">
+                                <a href="" class="product__title">Гель Краска Kodi золото N26, 5г</a>
+                                <a href="" class="category__title" title="">Одноразовая продукция</a>
+                                <div class="product__reviews">
+                                    <svg width="59" height="9" viewBox="0 0 59 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="img/icons/icons.svg#stars"></use>
+                                    </svg>
+                                    <a href="" class="product__review-count">12 отзывов</a>
+                                </div>
+                                <div class="product__price_container">
+                                    <div class="product__price">
+                                        61 грн.
+                                    </div>
+                                    <button class="product__buy">
+                                        <svg width="26" height="22" viewBox="0 0 26 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <use xlink:href="img/icons/icons.svg#buy"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__item">
+                            <div class="product__label">
+                                <div class="product__label_item label__new"></div>
+                            </div>
+                            <button class="product__like-btn">
+                                <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/icons/icons.svg#like"></use>
+                                </svg>
+                            </button>
+                            <button class="product__comparison-btn">
+                                <svg width="23" height="19" viewBox="0 0 23 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/icons/icons.svg#comparison"></use>
+                                </svg>
+                            </button>
+                            <div class="photo-product-wrapper">
+                                <a href="">
+                                    <img src="img/tovar.jpg" alt="Tovar">
+                                </a>
+                            </div>
+                            <div class="info-product-wrapper">
+                                <a href="" class="product__title">Гель Краска Kodi золото N26, 5г</a>
+                                <a href="" class="category__title" title="">Одноразовая продукция</a>
+                                <div class="product__reviews">
+                                    <svg width="59" height="9" viewBox="0 0 59 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="img/icons/icons.svg#stars"></use>
+                                    </svg>
+                                    <a href="" class="product__review-count">12 отзывов</a>
+                                </div>
+                                <div class="product__price_container">
+                                    <div class="product__price">
+                                        61 грн.
+                                    </div>
+                                    <button class="product__buy">
+                                        <svg width="26" height="22" viewBox="0 0 26 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <use xlink:href="img/icons/icons.svg#buy"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__item">
+                            <div class="product__label">
+                                <div class="product__label_item label__new"></div>
+                            </div>
+                            <button class="product__like-btn">
+                                <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/icons/icons.svg#like"></use>
+                                </svg>
+                            </button>
+                            <button class="product__comparison-btn">
+                                <svg width="23" height="19" viewBox="0 0 23 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/icons/icons.svg#comparison"></use>
+                                </svg>
+                            </button>
+                            <div class="photo-product-wrapper">
+                                <a href="">
+                                    <img src="img/tovar.jpg" alt="Tovar">
+                                </a>
+                            </div>
+                            <div class="info-product-wrapper">
+                                <a href="" class="product__title">Гель Краска Kodi золото N26, 5г</a>
+                                <a href="" class="category__title" title="">Одноразовая продукция</a>
+                                <div class="product__reviews">
+                                    <svg width="59" height="9" viewBox="0 0 59 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="img/icons/icons.svg#stars"></use>
+                                    </svg>
+                                    <a href="" class="product__review-count">12 отзывов</a>
+                                </div>
+                                <div class="product__price_container">
+                                    <div class="product__price">
+                                        61 грн.
+                                    </div>
+                                    <button class="product__buy">
+                                        <svg width="26" height="22" viewBox="0 0 26 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <use xlink:href="img/icons/icons.svg#buy"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__item">
+                            <div class="product__label">
+                                <div class="product__label_item label__new"></div>
+                            </div>
+                            <button class="product__like-btn">
+                                <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/icons/icons.svg#like"></use>
+                                </svg>
+                            </button>
+                            <button class="product__comparison-btn">
+                                <svg width="23" height="19" viewBox="0 0 23 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/icons/icons.svg#comparison"></use>
+                                </svg>
+                            </button>
+                            <div class="photo-product-wrapper">
+                                <a href="">
+                                    <img src="img/tovar.jpg" alt="Tovar">
+                                </a>
+                            </div>
+                            <div class="info-product-wrapper">
+                                <a href="" class="product__title">Гель Краска Kodi золото N26, 5г</a>
+                                <a href="" class="category__title" title="">Одноразовая продукция</a>
+                                <div class="product__reviews">
+                                    <svg width="59" height="9" viewBox="0 0 59 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="img/icons/icons.svg#stars"></use>
+                                    </svg>
+                                    <a href="" class="product__review-count">12 отзывов</a>
+                                </div>
+                                <div class="product__price_container">
+                                    <div class="product__price">
+                                        61 грн.
+                                    </div>
+                                    <button class="product__buy">
+                                        <svg width="26" height="22" viewBox="0 0 26 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <use xlink:href="img/icons/icons.svg#buy"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__item">
+                            <div class="product__label">
+                                <div class="product__label_item label__new"></div>
+                            </div>
+                            <button class="product__like-btn">
+                                <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/icons/icons.svg#like"></use>
+                                </svg>
+                            </button>
+                            <button class="product__comparison-btn">
+                                <svg width="23" height="19" viewBox="0 0 23 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/icons/icons.svg#comparison"></use>
+                                </svg>
+                            </button>
+                            <div class="photo-product-wrapper">
+                                <a href="">
+                                    <img src="img/tovar.jpg" alt="Tovar">
+                                </a>
+                            </div>
+                            <div class="info-product-wrapper">
+                                <a href="" class="product__title">Гель Краска Kodi золото N26, 5г</a>
+                                <a href="" class="category__title" title="">Одноразовая продукция</a>
+                                <div class="product__reviews">
+                                    <svg width="59" height="9" viewBox="0 0 59 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="img/icons/icons.svg#stars"></use>
+                                    </svg>
+                                    <a href="" class="product__review-count">12 отзывов</a>
+                                </div>
+                                <div class="product__price_container">
+                                    <div class="product__price">
+                                        61 грн.
+                                    </div>
+                                    <button class="product__buy">
+                                        <svg width="26" height="22" viewBox="0 0 26 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <use xlink:href="img/icons/icons.svg#buy"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__item">
+                            <div class="product__label">
+                                <div class="product__label_item label__new"></div>
+                            </div>
+                            <button class="product__like-btn">
+                                <svg width="23" height="21" viewBox="0 0 23 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/icons/icons.svg#like"></use>
+                                </svg>
+                            </button>
+                            <button class="product__comparison-btn">
+                                <svg width="23" height="19" viewBox="0 0 23 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/icons/icons.svg#comparison"></use>
+                                </svg>
+                            </button>
+                            <div class="photo-product-wrapper">
+                                <a href="">
+                                    <img src="img/tovar.jpg" alt="Tovar">
+                                </a>
+                            </div>
+                            <div class="info-product-wrapper">
+                                <a href="" class="product__title">Гель Краска Kodi золото N26, 5г</a>
+                                <a href="" class="category__title" title="">Одноразовая продукция</a>
+                                <div class="product__reviews">
+                                    <svg width="59" height="9" viewBox="0 0 59 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="img/icons/icons.svg#stars"></use>
+                                    </svg>
+                                    <a href="" class="product__review-count">12 отзывов</a>
+                                </div>
+                                <div class="product__price_container">
+                                    <div class="product__price">
+                                        61 грн.
+                                    </div>
+                                    <button class="product__buy">
+                                        <svg width="26" height="22" viewBox="0 0 26 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <use xlink:href="img/icons/icons.svg#buy"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="button__product__more">
+                        Больше товаров
+                    </button>
+                    <ul class="pagination">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1">
+                                <svg width="26" height="12" viewBox="0 0 26 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.46967 5.46967C0.176777 5.76256 0.176777 6.23744 0.46967 6.53033L5.24264 11.3033C5.53553 11.5962 6.01041 11.5962 6.3033 11.3033C6.59619 11.0104 6.59619 10.5355 6.3033 10.2426L2.06066 6L6.3033 1.75736C6.59619 1.46447 6.59619 0.989592 6.3033 0.696699C6.01041 0.403806 5.53553 0.403806 5.24264 0.696699L0.46967 5.46967ZM26 5.25L1 5.25V6.75L26 6.75V5.25Z"
+                                        fill="#A6B6C1" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item">...</li>
+                        <li class="page-item"><a class="page-link" href="#">210</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">
+                                <svg width="26" height="12" viewBox="0 0 26 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M25.5303 5.46967C25.8232 5.76256 25.8232 6.23744 25.5303 6.53033L20.7574 11.3033C20.4645 11.5962 19.9896 11.5962 19.6967 11.3033C19.4038 11.0104 19.4038 10.5355 19.6967 10.2426L23.9393 6L19.6967 1.75736C19.4038 1.46447 19.4038 0.989593 19.6967 0.696699C19.9896 0.403806 20.4645 0.403806 20.7574 0.696699L25.5303 5.46967ZM0 5.25L25 5.25V6.75L0 6.75L0 5.25Z"
+                                        fill="black" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        //include('_recently_watch.html')
+        //include('_review_category.html')
+    </main>
+    //include('_footer.html')
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
